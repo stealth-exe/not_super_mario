@@ -1,7 +1,7 @@
 # Features added after the bootcamp
 
-### Mobile support
-An on-screen jump button appears automatically on touch devices.
+### Mobile support (beta)
+An on-screen jump button appears automatically on touch devices. Landscape mode is somewhat broken (the game goes too fast).
 
 ### Better jump feel
 - variable jump height (tap for a short hop, hold for a full jump)
