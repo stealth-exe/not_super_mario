@@ -17,6 +17,9 @@ Some question blocks drop a mushroom (extra life) or a star (temporary invincibi
 ### Combo scoring
 Stomping multiple enemies in a row without touching the ground builds a combo multiplier for bonus points. It resets the moment you land.
 
+### Bug
+Fixed the bug where getting stuck allowed you to farm points
+
 ### Better graphics/sounds added
 - the sky, ground, and accent colors shift every few thousand pixels, cycling through a meadow, desert, dusk, and night look.
 - hills, clouds, and a sun scroll at different speeds behind the action for a sense of depth.
