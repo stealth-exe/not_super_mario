@@ -8,10 +8,7 @@
   --bg-dark: #0b0c10;
   --font-retro: 'Press Start 2P', cursive;
   --font-sans: 'Outfit', sans-serif;
-  --scale: 1;
-@media (min-width: 1200px) and (min-height: 600px) { :root { --scale: 1.3; } }
-@media (min-width: 1500px) and (min-height: 800px) { :root { --scale: 1.6; } }
-@media (min-width: 1800px) and (min-height: 1000px) { :root { --scale: 1.9; } }
+  --scale: min(1.8, calc(100vw / 840), calc(100vh / 440));
 }
 * { box-sizing: border-box; margin: 0; padding: 0; user-select: none; -webkit-tap-highlight-color: transparent; }
 html, body {
