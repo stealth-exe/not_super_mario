@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Super Mario</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div id="game-container">
+    <div id="game-viewport">
+      <div class="parallax-layer" id="layer-back"></div>
+      <div id="layer-sun"></div>
+      <div id="game-world"></div>
+
+      <div id="hud" class="hidden">
+        <div class="hud-left">
+          <div class="hud-row">
+            <div class="hud-chip">SCORE <span id="score-val">0</span></div>
+            <div class="hud-chip">COINS <span id="coins-val">0</span></div>
+          </div>
+          <div class="hud-row">
+            <div class="lives-row" id="lives-row"></div>
+            <div id="combo-display">COMBO x1</div>
+          </div>
+        </div>
+        <div class="hud-right">
+          <div class="hud-chip">HI-SCORE <span id="hi-score-val">0</span></div>
+        </div>
+      </div>
+
+      <div id="top-btns">
+        <button id="sound-btn" class="hidden">♪</button>
+        <button id="pause-btn" class="hidden">❚❚</button>
+      </div>
+    </div>
+
+    <div id="start-screen" class="overlay-screen">
+      <div class="menu-box">
+        <h1>SUPER MARIO</h1>
+        <p>Enjoy!</p>
+        <p class="controls-hint" style="margin-top: -10px; margin-bottom: 18px;">Current high score: <span id="start-hi-score-val">0</span></p>
+        <button id="start-btn" class="action-btn">START RUN</button>
+        <button id="reset-hi-btn" class="secondary-btn">RESET HIGH SCORE</button>
+        <p class="controls-hint">
+          <kbd>Space</kbd> / <kbd>↑</kbd> / <kbd>W</kbd> to jump, hold for a higher jump<br>
+          <kbd>P</kbd> or <kbd>Esc</kbd> to pause (on mobile, tap the button)
+        </p>
+      </div>
+    </div>
+
+    <div id="game-over-screen" class="overlay-screen hidden">
+      <div class="menu-box">
+        <h2 class="danger-text">GAME OVER</h2>
+        <p id="game-over-line">You fell! Skill issue.</p>
+        <div id="new-hi-badge" class="new-badge hidden">NEW HIGH SCORE</div>
+        <div class="stat-grid">
+          <div class="stat-box"><span class="num" id="final-score">0</span><span class="lbl">SCORE</span></div>
+          <div class="stat-box"><span class="num" id="final-coins">0</span><span class="lbl">COINS</span></div>
+          <div class="stat-box"><span class="num" id="final-combo">0</span><span class="lbl">BEST COMBO</span></div>
+          <div class="stat-box"><span class="num" id="high-score">0</span><span class="lbl">HI-SCORE</span></div>
+        </div>
+        <button id="restart-btn" class="action-btn">RETRY</button>
+      </div>
+    </div>
+
+    <div id="pause-screen" class="overlay-screen hidden">
+      <div class="menu-box">
+        <h2>PAUSED</h2>
+        <button id="resume-btn" class="action-btn">RESUME</button>
+      </div>
+    </div>
+
+    <div id="touch-controls">
+      <button id="jump-btn">JUMP</button>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
