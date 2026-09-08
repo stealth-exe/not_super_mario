@@ -115,7 +115,7 @@ const sfx = {
 
 /* layout */
 const resize = () => {
-  const scale = Math.min(window.innerWidth / 820, window.innerHeight / 420, 1);
+  const scale = Math.min(window.innerWidth / 820, window.innerHeight / 420);
   document.documentElement.style.setProperty('--scale', scale);
 };
 
@@ -491,7 +491,7 @@ const die = (fell, reason) => {
     localStorage.setItem('super_mario_hi_score', state.hiScore);
   }
   document.getElementById('game-over-line').textContent = reason === 'stationary'
-    ? "nice try"
+    ? "abcd1234"
     : (fell ? "You fell! Skill issue." : "A goomba got you. Rude.");
   document.getElementById('new-hi-badge').classList.toggle('hidden', !isNewHi);
   document.getElementById('final-score').textContent = state.score;
