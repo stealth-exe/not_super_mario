@@ -8,7 +8,7 @@
   --bg-dark: #0b0c10;
   --font-retro: 'Press Start 2P', cursive;
   --font-sans: 'Outfit', sans-serif;
-  --scale: min(1.8, calc(100vw / 840), calc(100vh / 440));
+  --scale: 1;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; user-select: none; -webkit-tap-highlight-color: transparent; }
 html, body {
