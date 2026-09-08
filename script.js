@@ -491,7 +491,7 @@ const die = (fell, reason) => {
     localStorage.setItem('super_mario_hi_score', state.hiScore);
   }
   document.getElementById('game-over-line').textContent = reason === 'stationary'
-    ? "abcd1234"
+    ? "nice try, but it wont work"
     : (fell ? "You fell! Skill issue." : "A goomba got you. Rude.");
   document.getElementById('new-hi-badge').classList.toggle('hidden', !isNewHi);
   document.getElementById('final-score').textContent = state.score;
